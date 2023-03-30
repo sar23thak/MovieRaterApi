@@ -54,10 +54,10 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-# CORS_ORIGIN_WHITELIST = [
-#     "http://localhost:3000"
-
-# ]
+CORS_ORIGIN_WHITELIST = [
+    "http://localhost:3000",
+    "http://20.204.8.141"
+]
 CORS_ALLOW_ALL_ORIGINS = True
 
 ROOT_URLCONF = 'movierater.urls'
