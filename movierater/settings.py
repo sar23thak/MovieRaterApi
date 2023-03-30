@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-!cmlx1aqd^fz@#1fnh=41ryst6zx6s#l$b$kc1$4(eo4*!x%i!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -54,9 +54,11 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ORIGIN_WHITELIST = [
-    "http://localhost:3000"
-]
+# CORS_ORIGIN_WHITELIST = [
+#     "http://localhost:3000"
+
+# ]
+CORS_ALLOW_ALL_ORIGINS = True
 
 ROOT_URLCONF = 'movierater.urls'
 
